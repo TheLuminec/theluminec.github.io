@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills and Testimonials</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Link to Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Link to external JavaScript file -->
+    <script defer src="script.js"></script>
+    <style>
+        /* Additional CSS for small skills styling */
+        #skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .small-skill {
+            background-color: #e0f7fa;
+            color: #00796b;
+            padding: 10px 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .small-skill:hover {
+            background-color: #b2ebf2;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .skills-list {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill {
+            margin-bottom: 20px;
+        }
+
+        .testimonials {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial {
+            margin-bottom: 20px;
+        }
+
+        header {
+            background-color: #0277bd;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #b3e5fc;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header section with navigation links -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills & Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Skills section with enhanced styling and JavaScript interaction -->
+    <section id="skills" class="skills">
+        
+        <div class="skills-list">
+          <h2>Skills</h2>
+            <!-- Major skills with descriptions -->
+            <div class="skill">
+                <h3>C++</h3>
+                <p>Experienced in developing various projects, including neural networks and games, with C++.</p>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <p>Proficient in Python for data analysis, image processing, machine learning, and more.</p>
+            </div>
+            <div class="skill">
+                <h3>JavaScript & Unity</h3>
+                <p>Skilled in JavaScript and Unity for game development, bringing ideas to life in interactive ways.</p>
+            </div>
+            <div class="skill">
+                <h3>Robotics & Embedded Systems</h3>
+                <p>Experienced with robotics projects, including battle bots and microcontroller programming.</p>
+            </div>
+
+            <!-- Smaller skills as interactive elements -->
+            <div class="small-skills">
+                <h3>Languages & Tools</h3>
+                <div id="skills-container">
+                    <div class="small-skill">C++</div>
+                    <div class="small-skill">Python</div>
+                    <div class="small-skill">JavaScript</div>
+                    <div class="small-skill">C#</div>
+                    <div class="small-skill">Lua</div>
+                    <div class="small-skill">Java</div>
+                    <div class="small-skill">Unity</div>
+                    <div class="small-skill">Machine Learning</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials section -->
+    <section id="testimonials" class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonial-list">
+            <!-- Testimonial 1 -->
+            <div class="testimonial">
+                <p>"Caleb is one of the most hardworking and innovative students I have had the pleasure to work with. He consistently goes above and beyond in every project."</p>
+                <p><strong>- Professor John Smith, Miami University</strong></p>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="testimonial">
+                <p>"His skills in game development and machine learning have been a huge asset to our team's projects. Caleb has a natural ability to learn and apply new concepts quickly."</p>
+                <p><strong>- Teammate from Robotics Club</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2024 Caleb Turner. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to add reactive behavior to small skill elements
+        document.addEventListener("DOMContentLoaded", () => {
+            const skillsContainer = document.getElementById("skills-container");
+            const skillElements = skillsContainer.querySelectorAll(".small-skill");
+
+            skillElements.forEach(skill => {
+                // Add mouseover and mouseout events for interactivity
+                skill.addEventListener("mouseover", () => {
+                    skill.style.transform = "scale(1.1)";
+                    skill.style.transition = "transform 0.3s ease";
+                });
+
+                skill.addEventListener("mouseout", () => {
+                    skill.style.transform = "scale(1)";
+                });
+            });
+        });
+    </script>
+</body>
+</html>
