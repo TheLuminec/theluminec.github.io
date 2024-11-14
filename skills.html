@@ -7,162 +7,85 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
-    <style>
-        #skills-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 15px;
-            justify-content: center;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .small-skill {
-            background-color: #e0f7fa;
-            color: #00796b;
-            padding: 10px 20px;
-            border-radius: 15px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .small-skill:hover {
-            background-color: #b2ebf2;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            transform: translateY(-5px);
-        }
-
-        .skills-list {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .skill {
-            margin-bottom: 20px;
-        }
-
-        .testimonials {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 20px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .testimonial {
-            margin-bottom: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #b3e5fc;
-        }
-    </style>
+    
 </head>
 <body>
-    <!-- Header section with navigation links -->
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="skills.html">Skills & Testimonials</a></li>
+                <li><a href="skills.html">Skills & Experience</a></li>
                 <li><a href="p5js.html">p5.js Projects</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- Skills section with enhanced styling and JavaScript interaction -->
+    <section><br><br><br></section>
     <section id="skills" class="skills">
         
         <div class="skills-list">
           <h2>Skills</h2>
-            <!-- Major skills with descriptions -->
             <div class="skill">
-                <h3>C++</h3>
-                <p>Experienced in developing various projects, including neural networks and games, with C++.</p>
-            </div>
-            <div class="skill">
-                <h3>Python</h3>
-                <p>Proficient in Python for data analysis, image processing, machine learning, and more.</p>
-            </div>
-            <div class="skill">
-                <h3>JavaScript & Unity</h3>
-                <p>Skilled in JavaScript and Unity for game development, bringing ideas to life in interactive ways.</p>
+                <h3>Game Development</h3>
+                <p>Skilled in Unity for game development where I have helped make numerous small games and AI projects.</p>
             </div>
             <div class="skill">
                 <h3>Robotics & Embedded Systems</h3>
-                <p>Experienced with robotics projects, including battle bots and microcontroller programming.</p>
+                <p>Experienced with robotics projects both building and programming, including battle bots and microcontroller programming.</p>
+            </div>
+            <div class="skill">
+                <h3>General Programming</h3>
+                <p>Have made many diffrent programs both backend and graphical with a fairly large variety of use cases,
+                     including web apps, PC/Mac/Linux applications, and bots.</p>
             </div>
 
-            <!-- Smaller skills as interactive elements -->
             <div class="small-skills">
                 <h3>Languages & Tools</h3>
                 <div id="skills-container">
-                    <div class="small-skill">C++</div>
-                    <div class="small-skill">Python</div>
-                    <div class="small-skill">JavaScript</div>
-                    <div class="small-skill">C#</div>
-                    <div class="small-skill">Lua</div>
                     <div class="small-skill">Java</div>
                     <div class="small-skill">Unity</div>
-                    <div class="small-skill">Machine Learning</div>
+                    <div class="small-skill">C++</div>
+                    <div class="small-skill">C</div>
+                    <div class="small-skill">C#</div>
+                    <div class="small-skill">Arduino</div>
+                    <div class="small-skill">Python</div>
+                    <div class="small-skill">Lua</div>
+                    <div class="small-skill">JavaScript</div>
+                    <div class="small-skill">p5.js</div>
+                    <div class="small-skill">HTML</div>
+                    <div class="small-skill">Node.js</div>
+                    <div class="small-skill">Git</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials section -->
-    <section id="testimonials" class="testimonials">
-        <h2>Testimonials</h2>
-        <div class="testimonial-list">
-            <!-- Testimonial 1 -->
-            <div class="testimonial">
-                <p>"Caleb is one of the most hardworking and innovative students I have had the pleasure to work with. He consistently goes above and beyond in every project."</p>
-                <p><strong>- Professor John Smith, Miami University</strong></p>
+    <section id="experience" class="experiences">
+        <h2>Experience</h2>
+        <div class="experience-list">
+            <div class="experience">
+                <h3>IEEE, Miami University</h3>
+                <p>Where I undertook being the leader of a project to restore a battlebot to functionality. As only its motors and frame remained, we 
+                    used RF transceivers and motor controllers to rewire and program a new controller for it.
+                </p>
             </div>
-            <!-- Testimonial 2 -->
-            <div class="testimonial">
-                <p>"His skills in game development and machine learning have been a huge asset to our team's projects. Caleb has a natural ability to learn and apply new concepts quickly."</p>
-                <p><strong>- Teammate from Robotics Club</strong></p>
+            <div class="experience">
+                <h3>Student Lab Assistant, Miami University</h3>
+                <p>Where I watch over and help other CSE students when they need to use the computer lab for assignments and personal projects.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Footer section -->
     <footer>
         <p>&copy; 2024 Caleb Turner</p>
     </footer>
 
     <script>
-        // JavaScript to add reactive behavior to small skill elements
         document.addEventListener("DOMContentLoaded", () => {
             const skillsContainer = document.getElementById("skills-container");
             const skillElements = skillsContainer.querySelectorAll(".small-skill");
 
             skillElements.forEach(skill => {
-                // Add mouseover and mouseout events for interactivity
                 skill.addEventListener("mouseover", () => {
                     skill.style.transform = "scale(1.1)";
                     skill.style.transition = "transform 0.3s ease";
